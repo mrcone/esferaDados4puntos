@@ -10,11 +10,6 @@ Teniendo los puntos:
 ¿Cómo se puede encontrar el centro y el radio de la esfera que corte exáctamente esos puntos? Sencillo. 
 Se puede encontrar la solución a través del determinante de la ecuación:
 
-`` x2 +  y2 + z2 		x 	y 	z 	1 
-x12 + y12 + z12 	x1 	y1 	z1 	1 ``
-
-x22 + y22 + z22 	x2 	y2 	z2 	1   = 0
-
-x32 + y32 + z32 	x3 	y3 	z3 	1
-
-x42 + y42 + z42 	x4 	y4 	z4 	1`
++--------------+---+---+---+---+
+| x2 + y2 + z2 | x | y | z | 1 |
++--------------+---+---+---+---+
