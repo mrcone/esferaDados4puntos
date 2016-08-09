@@ -40,10 +40,10 @@ Evaluando los cofactores de la primera fila del determinante se puede obtener la
 ###Uso 
  
  ```c#
-double puntoA={1,2,3};
-double puntoB={3,5,1};
-double puntoC={4,8,2};
-double puntoD={2,7,10};
+double[] puntoA={1,2,3};
+double[] puntoB={3,5,1};
+double[] puntoC={4,8,2};
+double[] puntoD={2,7,10};
 
 CalcularEsfera4Puntos calculo=new CalcularEsfera4Puntos(puntoA, puntoB, puntoC, puntoD);
 
