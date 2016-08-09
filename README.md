@@ -1,4 +1,4 @@
-# esferaDados4puntos
+# Esfera dados 4 puntos geométricos
 ###Cálculo centro y radio esfera dados 4 puntos.
 
 En geometría analítica, se sabe que existe una única esfera que pase por 4 puntos no coplanarios, sí y solo sí, no se encuentran en el mismo plano. Si están en el mismo plano, por lógica, no existe una esfera que pase por 4 puntos o existe un numero infinito si los 4 puntos se encuentran en un círculo perfecto.
@@ -36,3 +36,17 @@ Evaluando los cofactores de la primera fila del determinante se puede obtener la
  **r<sub>0</sub><sup>2</sup> = (x<sub>0</sub><sup>2</sup> + y<sub>0</sub><sup>2</sup> + z<sub>0</sub><sup>2</sup>) - M<sub>15</sub>/M<sub>11</sub>**
  
  Cabe destacar que no existe solución cuando M<sub>11</sub> es 0. En ese caso, los puntos no pertenece a una esfera. Pueden pertenecer al mismo plano o 3 puntos pertenecients a la misma linea recta.
+ 
+###Uso 
+ 
+ ```c#
+double puntoA={1,2,3};
+double puntoB={3,5,1};
+double puntoC={4,8,2};
+double puntoD={2,7,10};
+
+CalcularEsfera4Puntos calculo=new CalcularEsfera4Puntos(puntoA, puntoB, puntoC, puntoD);
+
+double[] centroEsfera=calculo.Centro(); //Array de 3 doubles indicando el centro geométrico de la esfera
+double radio=calculo.Radio(); //Radio de la misma
+```
